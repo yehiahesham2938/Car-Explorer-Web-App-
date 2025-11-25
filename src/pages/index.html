@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Explorer</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body class="bg-background text-text transition-colors duration-300 min-h-screen flex flex-col">
+    <nav class="p-4 border-b border-primary/20 bg-surface/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/src/pages/index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Car Explorer
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="/src/pages/cars.html" class="font-medium hover:text-primary transition-colors">All Cars</a>
+                <a href="/src/pages/favorites.html"
+                    class="font-medium hover:text-primary transition-colors">Favorites</a>
+                <a href="/src/pages/compare.html" class="font-medium hover:text-primary transition-colors">Compare</a>
+                <button id="theme-toggle" class="button-action bg-primary text-white text-sm">Switch Theme</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 container mx-auto px-4 py-12 flex flex-col items-center justify-center text-center">
+        <h1
+            class="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+            Find Your Dream Ride
+        </h1>
+        <p class="text-xl md:text-2xl text-text/80 mb-10 max-w-2xl">
+            Explore, compare, and discover the best cars on the market. From electric speedsters to luxury cruisers.
+        </p>
+        <div class="flex gap-4">
+            <a href="/src/pages/cars.html" class="btn-primary text-lg px-8 py-3">Browse Cars</a>
+            <a href="/src/pages/compare.html" class="btn-outline text-lg px-8 py-3">Compare Favorites</a>
+        </div>
+
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+            <div class="p-6 rounded-xl bg-surface border border-primary/10 hover:border-primary/30 transition-colors">
+                <div class="text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Smart Search</h3>
+                <p class="text-text/70">Filter by price, horsepower, and type to find exactly what you need.</p>
+            </div>
+            <div class="p-6 rounded-xl bg-surface border border-primary/10 hover:border-primary/30 transition-colors">
+                <div class="text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Save Favorites</h3>
+                <p class="text-text/70">Bookmark your top picks to easily access them later.</p>
+            </div>
+            <div class="p-6 rounded-xl bg-surface border border-primary/10 hover:border-primary/30 transition-colors">
+                <div class="text-primary mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Compare Specs</h3>
+                <p class="text-text/70">Side-by-side comparison of features, price, and performance.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-6 border-t border-primary/20 text-center text-text/60">
+        <p>&copy; 2024 Car Explorer. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/js/app.js"></script>
+</body>
+
+</html>

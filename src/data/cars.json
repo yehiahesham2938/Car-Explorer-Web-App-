@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "brand": "Hyundai",
+        "model": "Tucson",
+        "year": 2024,
+        "price": 1750000,
+        "horsepower": 180,
+        "type": "SUV",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.6i9YCDjPj8r5PO8MTeeEfAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Turbo Engine",
+            "Panoramic Sunroof",
+            "Smart Key"
+        ]
+    },
+    {
+        "id": 2,
+        "brand": "Kia",
+        "model": "Sportage",
+        "year": 2024,
+        "price": 1850000,
+        "horsepower": 180,
+        "type": "SUV",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.na6HpQ47fciNMkAQr-9NpgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Curved Display",
+            "LED Headlights",
+            "Drive Mode Select"
+        ]
+    },
+    {
+        "id": 3,
+        "brand": "Toyota",
+        "model": "Corolla",
+        "year": 2023,
+        "price": 1300000,
+        "horsepower": 120,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.75a1d8918d9348aa19a51a2f7c8efd63?rik=lWNlRn3ImhXPzA&pid=ImgRaw&r=0",
+        "features": [
+            "Reliability",
+            "Fuel Efficient",
+            "Touchscreen"
+        ]
+    },
+    {
+        "id": 4,
+        "brand": "Nissan",
+        "model": "Sunny",
+        "year": 2024,
+        "price": 650000,
+        "horsepower": 108,
+        "type": "Sedan",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.6nGLp7uIJEJRUOnXLDvQbQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Economic",
+            "Spacious",
+            "Bluetooth"
+        ]
+    },
+    {
+        "id": 5,
+        "brand": "MG",
+        "model": "ZS",
+        "year": 2023,
+        "price": 980000,
+        "horsepower": 119,
+        "type": "SUV",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.Rk6R0JtOXLjPS5jB752s-QHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Apple CarPlay",
+            "Leather Seats",
+            "Rear Camera"
+        ]
+    },
+    {
+        "id": 6,
+        "brand": "Chery",
+        "model": "Tiggo 7 Pro",
+        "year": 2024,
+        "price": 1100000,
+        "horsepower": 154,
+        "type": "SUV",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.ve8SkkfNIGjP_7VM8BmuBgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Turbo",
+            "Digital Cluster",
+            "Ambient Lighting"
+        ]
+    },
+    {
+        "id": 7,
+        "brand": "Mercedes-Benz",
+        "model": "C 180",
+        "year": 2023,
+        "price": 3500000,
+        "horsepower": 170,
+        "type": "Luxury",
+        "image": "https://www.dubicars.com/images/b9e31f/w_1300x760/dresden-used-cars/8a35fab6-bdba-4f43-b54f-74dec5d937eb.jpg",
+        "features": [
+            "MBUX",
+            "Luxury Interior",
+            "Advanced Safety"
+        ]
+    },
+    {
+        "id": 8,
+        "brand": "BMW",
+        "model": "320i",
+        "year": 2024,
+        "price": 3700000,
+        "horsepower": 184,
+        "type": "Luxury",
+        "image": "https://contactcars.fra1.cdn.digitaloceanspaces.com/contactcars-production/Images/Large/Engines/ca0af63d963a4c6aa0f5a2e29be362ac_2ff2b6ed-23c4-4aa5-860a-39b4198f3b10.jpeg",
+        "features": [
+            "iDrive 8",
+            "Sport Seats",
+            "LED Lights"
+        ]
+    },
+    {
+        "id": 9,
+        "brand": "Suzuki",
+        "model": "Swift",
+        "year": 2023,
+        "price": 700000,
+        "horsepower": 82,
+        "type": "Hatchback",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.2lkacsbMR-PeG2WNuT5p7QHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Compact",
+            "Fuel Saver",
+            "Push Start"
+        ]
+    },
+    {
+        "id": 10,
+        "brand": "BYD",
+        "model": "F3",
+        "year": 2023,
+        "price": 550000,
+        "horsepower": 108,
+        "type": "Sedan",
+        "image": "https://cdn.wheel-size.com/automobile/body/byd-f3-2016-2023-1664718891.2910833.jpg",
+        "features": [
+            "Affordable",
+            "Manual Gearbox",
+            "Leather Seats"
+        ]
+    },
+    {
+        "id": 11,
+        "brand": "Renault",
+        "model": "Megane",
+        "year": 2023,
+        "price": 1400000,
+        "horsepower": 115,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.f172c51b8058a5b7d2cc939eb7b116ec?rik=DssJV6t3lXqLQA&pid=ImgRaw&r=0",
+        "features": [
+            "Grand Coupe",
+            "R-Link",
+            "Spacious Trunk"
+        ]
+    },
+    {
+        "id": 12,
+        "brand": "Peugeot",
+        "model": "3008",
+        "year": 2024,
+        "price": 1950000,
+        "horsepower": 165,
+        "type": "SUV",
+        "image": "https://cdn.motor1.com/images/mgl/1ZknvW/s1/2024-peugeot-3008.jpg",
+        "features": [
+            "i-Cockpit",
+            "Futuristic Design",
+            "Grip Control"
+        ]
+    },
+    {
+        "id": 13,
+        "brand": "Hyundai",
+        "model": "Verna",
+        "year": 2014,
+        "price": 350000,
+        "horsepower": 106,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.f3eddc8172e221802beffa94b6405b2c?rik=ubNfexc7304hWQ&pid=ImgRaw&r=0",
+        "features": [
+            "Reliable",
+            "Cheap Parts",
+            "Resale Value"
+        ]
+    },
+    {
+        "id": 14,
+        "brand": "Mitsubishi",
+        "model": "Lancer Puma",
+        "year": 2016,
+        "price": 550000,
+        "horsepower": 105,
+        "type": "Sedan",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.GCMwdzfAuNlFbT8mcKBpSQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Sporty Look",
+            "Japanese Reliability",
+            "Spacious"
+        ]
+    },
+    {
+        "id": 15,
+        "brand": "Chevrolet",
+        "model": "Optra",
+        "year": 2020,
+        "price": 600000,
+        "horsepower": 110,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.4794d9c388a039e9f583f2446e15ce83?rik=X0aWv4qI%2fuVghQ&pid=ImgRaw&r=0",
+        "features": [
+            "Family Car",
+            "Comfortable",
+            "Available Parts"
+        ]
+    },
+    {
+        "id": 16,
+        "brand": "Kia",
+        "model": "Cerato",
+        "year": 2015,
+        "price": 650000,
+        "horsepower": 130,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.4794d9c388a039e9f583f2446e15ce83?rik=X0aWv4qI%2fuVghQ&pid=ImgRaw&r=0",
+        "features": [
+            "Modern Design",
+            "Good Performance",
+            "Resale Value"
+        ]
+    },
+    {
+        "id": 17,
+        "brand": "Hyundai",
+        "model": "Elantra HD",
+        "year": 2019,
+        "price": 700000,
+        "horsepower": 121,
+        "type": "Sedan",
+        "image": "https://th.bing.com/th/id/R.4794d9c388a039e9f583f2446e15ce83?rik=X0aWv4qI%2fuVghQ&pid=ImgRaw&r=0",
+        "features": [
+            "Durable",
+            "Smooth Ride",
+            "Popular"
+        ]
+    },
+    {
+        "id": 18,
+        "brand": "Nissan",
+        "model": "Qashqai",
+        "year": 2018,
+        "price": 1100000,
+        "horsepower": 117,
+        "type": "SUV",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.TtURnIu7fYHv9nymu4eTFQHaEL?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "Crossover",
+            "High Ground Clearance",
+            "Safety"
+        ]
+    },
+    {
+        "id": 19,
+        "brand": "Opel",
+        "model": "Astra",
+        "year": 2017,
+        "price": 850000,
+        "horsepower": 140,
+        "type": "Sedan",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.YsWgZuH3j5LHZ92ktN6i0gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "features": [
+            "German Engineering",
+            "Turbo",
+            "Stable"
+        ]
+    },
+    {
+        "id": 20,
+        "brand": "Jeep",
+        "model": "Renegade",
+        "year": 2016,
+        "price": 950000,
+        "horsepower": 140,
+        "type": "SUV",
+        "image": "https://th.bing.com/th/id/R.7d3ff94b1606584058b720ae7705d82e?rik=U82RwuyJYms7fw&pid=ImgRaw&r=0",
+        "features": [
+            "Iconic Design",
+            "Compact SUV",
+            "Fun to Drive"
+        ]
+    }
+]

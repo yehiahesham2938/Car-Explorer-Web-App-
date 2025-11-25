@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - Car Explorer</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body class="bg-background text-text transition-colors duration-300 min-h-screen flex flex-col">
+    <nav class="p-4 border-b border-primary/20 bg-surface/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/src/pages/index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Car Explorer
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="/src/pages/cars.html" class="font-medium hover:text-primary transition-colors">All Cars</a>
+                <a href="/src/pages/favorites.html"
+                    class="font-medium hover:text-primary transition-colors">Favorites</a>
+                <a href="/src/pages/compare.html" class="font-medium hover:text-primary transition-colors">Compare</a>
+                <button id="theme-toggle" class="button-action bg-primary text-white text-sm">Switch Theme</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 container mx-auto px-4 py-8">
+        <div id="loading" class="text-center py-12">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+            <p class="mt-4 text-text/60">Loading details...</p>
+        </div>
+
+        <div id="error" class="hidden text-center py-12">
+            <h2 class="text-2xl font-bold text-red-500 mb-2">Car Not Found</h2>
+            <p class="text-text/60 mb-6">The car you are looking for does not exist or has been removed.</p>
+            <a href="/src/pages/cars.html" class="btn-primary">Back to All Cars</a>
+        </div>
+
+        <div id="car-content" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-12 animate-fade-in">
+            <!-- Image Section -->
+            <div class="space-y-4">
+                <div
+                    class="rounded-2xl overflow-hidden shadow-2xl border border-primary/20 aspect-video relative group">
+                    <img id="car-image" src="" alt=""
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="flex flex-col justify-center space-y-8">
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <span id="car-type"
+                            class="px-3 py-1 text-sm font-bold uppercase tracking-wider text-white bg-primary rounded-full shadow-md"></span>
+                        <span id="car-id-display" class="text-xs text-text/40 font-mono"></span>
+                    </div>
+                    <h1 id="car-title" class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight"></h1>
+                    <p id="car-price" class="text-3xl font-bold text-primary"></p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 py-6 border-y border-primary/10">
+                    <div class="bg-surface p-4 rounded-xl border border-primary/5">
+                        <p class="text-sm text-text/60 uppercase tracking-wide">Model Year</p>
+                        <p id="car-year" class="text-2xl font-bold"></p>
+                    </div>
+                    <div class="bg-surface p-4 rounded-xl border border-primary/5">
+                        <p class="text-sm text-text/60 uppercase tracking-wide">Horsepower</p>
+                        <p id="car-hp" class="text-2xl font-bold"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Key Features
+                    </h3>
+                    <ul id="car-features" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- Features list -->
+                    </ul>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <button id="fav-btn"
+                        class="btn-primary flex-1 py-4 text-lg flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                        <svg id="fav-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span id="fav-text">Add to Favorites</span>
+                    </button>
+                    <a href="/src/pages/compare.html"
+                        class="btn-outline px-8 py-4 flex items-center justify-center text-lg">Compare</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/js/app.js"></script>
+</body>
+
+</html>
