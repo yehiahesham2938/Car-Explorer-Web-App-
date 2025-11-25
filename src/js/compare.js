@@ -15,7 +15,7 @@ async function init() {
         return;
     }
 
-    // Fetch all favorite cars
+    // Fetch elfavorite by their ids 
     const cars = [];
     for (const id of favoriteIds) {
         const car = await getCarById(id);
@@ -35,8 +35,7 @@ function renderComparison(cars) {
     emptyState.classList.add('hidden');
     container.classList.remove('hidden');
 
-    // Render Header
-    // Clear existing headers except the first one
+    // remove existing headers except the first one
     while (headerRow.children.length > 1) {
         headerRow.removeChild(headerRow.lastChild);
     }
@@ -58,12 +57,12 @@ function renderComparison(cars) {
         headerRow.appendChild(th);
     });
 
-    // Render Rows
+    // Render elcomparision table
     const features = [
         { label: 'Type', key: 'type' },
         { label: 'Year', key: 'year' },
-        { label: 'Horsepower', key: 'horsepower', format: v => `${v} HP` },
-        { label: 'Key Features', key: 'features', format: v => v.join(', ') }
+        { label: 'Horsepower', key: 'horsepower',format: horsepower => `${horsepower} HP`},
+        { label: 'Key Features', key: 'features', format: features => features.join(', ') }
     ];
 
     tbody.innerHTML = '';
@@ -71,13 +70,13 @@ function renderComparison(cars) {
         const tr = document.createElement('tr');
         tr.className = 'border-b border-primary/10 hover:bg-surface/30 transition-colors';
 
-        // Label cell
+    
         const tdLabel = document.createElement('td');
         tdLabel.className = 'p-4 font-semibold text-text/70 bg-surface/50 sticky left-0 backdrop-blur-md';
         tdLabel.textContent = feature.label;
         tr.appendChild(tdLabel);
 
-        // Data cells
+        // data bta3t elcar 
         cars.forEach(car => {
             const td = document.createElement('td');
             td.className = 'p-4';
@@ -95,7 +94,6 @@ function renderComparison(cars) {
         btn.addEventListener('click', (e) => {
             const id = Number(e.target.dataset.id);
             removeFavorite(id);
-            // Re-init to refresh table
             init();
         });
     });
