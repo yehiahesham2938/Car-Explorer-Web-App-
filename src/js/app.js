@@ -13,9 +13,12 @@ function initThemeToggle() {
         updateToggleBtnState(toggleBtn, getTheme());
         toggleBtn.addEventListener('click', () => {
             const current = getTheme();
-            const newTheme = current === 'eco' ? 'sport' : 'eco';
-            setTheme(newTheme);
-            updateToggleBtnState(toggleBtn, newTheme);
+            if (current === 'sport') {
+                setTheme('eco');
+            } else {
+                setTheme('sport');
+            }
+            updateToggleBtnState(toggleBtn, getTheme());
         });
     }
 }
@@ -38,9 +41,12 @@ async function initPage() {
 
     if (path.includes('cars.html')) {
         initCarsPage();
-    } else if (path.includes('details.html')) {
+    } 
+    else if (path.includes('details.html'))
+    {
         initDetailsPage();
-    } else if (path.includes('favorites.html')) {
+    } 
+    else if (path.includes('favorites.html')) {
         initFavoritesPage();
     }
 }
@@ -67,12 +73,11 @@ async function initCarsPage() {
 
     // Fetch data
     try {
-        allCars = await fetchCars();
-        // Simulate delay
+        allCars = await fetchCars();        
         setTimeout(() => {
             skeleton.classList.add('hidden');
             render();
-        }, 500);
+        }, 200);
     } catch (e) {
         console.error(e);
     }
@@ -93,7 +98,7 @@ async function initCarsPage() {
         }
     }
 
-    // Events
+    // events
     searchInput?.addEventListener('input', (e) => { currentFilters.search = e.target.value; render(); });
     typeFilter?.addEventListener('change', (e) => { currentFilters.type = e.target.value; render(); });
     sortFilter?.addEventListener('change', (e) => { currentFilters.sort = e.target.value; render(); });
@@ -108,7 +113,7 @@ async function initCarsPage() {
     window.addEventListener('favorites-updated', render);
 }
 
-// --- Details Page Logic ---
+//details page
 async function initDetailsPage() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -123,7 +128,7 @@ async function initDetailsPage() {
     }
 
     const car = await getCarById(id);
-    if (!car) {
+    if (car === null) {
         loading.classList.add('hidden');
         error.classList.remove('hidden');
         return;
@@ -167,12 +172,12 @@ async function initDetailsPage() {
     });
 }
 
-// --- Favorites Page Logic ---
+//fav page
 async function initFavoritesPage() {
     const grid = document.getElementById('favorites-grid');
     const empty = document.getElementById('empty-state');
 
-    if (!grid) return;
+    if (grid === null || empty === null) return;
 
     async function render() {
         const favIds = getFavorites();
@@ -188,7 +193,8 @@ async function initFavoritesPage() {
 
         for (const id of favIds) {
             const car = await getCarById(id);
-            if (car) {
+            if (car) 
+            {
                 grid.appendChild(createCarCard(car));
             }
         }
@@ -198,7 +204,7 @@ async function initFavoritesPage() {
     window.addEventListener('favorites-updated', render);
 }
 
-// Global Init
+
 document.addEventListener('DOMContentLoaded', () => {
     initThemeToggle();
     initPage();

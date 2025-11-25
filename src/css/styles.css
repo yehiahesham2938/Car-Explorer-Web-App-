@@ -5,22 +5,22 @@
 @layer base {
   :root {
     /* Default (Eco Mode) - Green/White */
-    --color-primary: 34 197 94; /* green-500 */
-    --color-secondary: 240 253 244; /* green-50 */
-    --color-accent: 21 128 61; /* green-700 */
-    --color-background: 255 255 255; /* white */
-    --color-surface: 240 253 244; /* green-50 */
-    --color-text: 20 83 45; /* green-900 */
+    --color-primary: 34 197 94;
+    --color-secondary: 240 253 244;
+    --color-accent: 21 128 61;
+    --color-background: 255 255 255;
+    --color-surface: 240 253 244;
+    --color-text: 20 83 45;
   }
 
   [data-theme="sport"] {
     /* Sport Mode - Red/Black */
-    --color-primary: 239 68 68; /* red-500 */
-    --color-secondary: 24 24 27; /* zinc-900 */
-    --color-accent: 185 28 28; /* red-700 */
-    --color-background: 9 9 11; /* zinc-950 */
-    --color-surface: 24 24 27; /* zinc-900 */
-    --color-text: 255 255 255; /* white */
+    --color-primary: 239 68 68;
+    --color-secondary: 24 24 27;
+    --color-accent: 185 28 28;
+    --color-background: 9 9 11;
+    --color-surface: 24 24 27;
+    --color-text: 255 255 255;
   }
   
   body {

@@ -1,11 +1,7 @@
-/**
- * Fetches car data from the local JSON file.
- * @returns {Promise<Array>} List of cars
- */
+
 export async function fetchCars() {
     try {
-        // In a real app, this would be an API endpoint.
-        // Using absolute path from root for Vite
+        // fetch eldata mn el API 
         const response = await fetch('/src/data/cars.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -17,17 +13,10 @@ export async function fetchCars() {
         return [];
     }
 }
-
-/**
- * Filters and sorts cars based on criteria.
- * @param {Array} cars - The list of cars to filter
- * @param {Object} filters - Filter criteria
- * @returns {Array} Filtered and sorted cars
- */
 export function filterCars(cars, filters = {}) {
     let result = [...cars];
 
-    // Search by brand or model
+    // Search by model
     if (filters.search) {
         const term = filters.search.toLowerCase();
         result = result.filter(car =>
@@ -55,11 +44,6 @@ export function filterCars(cars, filters = {}) {
     return result;
 }
 
-/**
- * Get a single car by ID
- * @param {number} id 
- * @returns {Promise<Object|null>}
- */
 export async function getCarById(id) {
     const cars = await fetchCars();
     return cars.find(c => c.id === Number(id)) || null;
